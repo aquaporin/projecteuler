@@ -15,3 +15,11 @@ is_even <- function(x) {
 is_odd <- function(x) {
   !is_even(x)
 }
+
+# Timer
+timer <- function(command) {
+  start <- Sys.time()
+  print(command)
+  end <- Sys.time()
+  print(end - start)
+}
